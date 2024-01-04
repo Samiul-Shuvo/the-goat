@@ -8,6 +8,8 @@
     background-image: url('../images/goat.jpg');
     background-position: 55% 15%;
     height: 100vh;
+    clip-path: polygon(100% 0, 100% 62%, 50% 100%, 0 64%, 0 0);
+
     
 
 }
@@ -19,18 +21,19 @@
     padding-top: 30px;
     font-family: cursive;
 }
-
+ 
 .article,#cow-type{
     font-size: larger;
     width: 80%;
     margin: 60px auto;
-    background-color: rgba(62, 246, 246, 0.561);
+    /* background-color: rgba(62, 246, 246, 0.561); */
     border-width: 20px;
     border-color: yellow;
+    background: linear-gradient(90deg, pink,cyan);
     border-style: solid;
     padding: 60px;
 }
-.article h2{
+.article h2,#cow-type h2{
     text-align: center;
     font-size: 40px;
     border-style: solid;
@@ -50,4 +53,14 @@
     color: brown;
     font-size: 1em;
     /* em  means size compare to parents */
+}
+.cow-images{
+    display: flex;
+    gap: 20px;
+}
+.cow-images div{
+    min-width: 300px;
+}
+.cow-images img{
+    width: 100%;
 }
